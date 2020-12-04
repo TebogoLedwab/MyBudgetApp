@@ -1,23 +1,86 @@
-<!-- Start your project here-->
-<div class="container">
-  <div
-    class="d-flex justify-content-center align-items-center"
-    style="height: 100vh"
-  >
-    <div class="text-center">
-      <h1 class="text-one">CYBER MONDAY SALE!</h1>
-      <i class="fas fa-calendar-day icon-color fa-10x"></i>
-      <p class="mt-2 text-two">
-        Check what we have prepared and start using the richest UI Kit today.<br />Hurry
-        up & don't loose your chance.
-      </p>
-      <a
-        type="button"
-        class="btn btn-info text-white btn-rounded btn-lg"
-        href="https://mdbootstrap.com/sale/"
-        ><i class="fas fa-shopping-basket"></i> CLAIM OFFER</a
-      >
+<!-- <navbar></navbar> -->
+
+<div class="top-bar cyan">
+    <h1>My Budget Calculator</h1>
+  </div>
+<br>
+  <section class="total-budget-section">
+    <h3 class="text-center">Total amount:R 1500</h3>
+  </section>
+
+<section class="add-item-section">
+    <div class="add-item-container">
+     <!-- Default form  -->
+    <form class="text-center border border-light p-5  ">
+
+      <div class="form-row mb-4 ">
+        <div class="col is-narrow">
+          <!-- Amount -->
+          <input type="number" style="width: 100px" id="defaultFormAmount" class="form-control" placeholder="Amount">
+        </div>
+        <div class="col">
+          <!-- Description -->
+          <input type="text" style="width: 460px" id="defaultFormDescription" class="form-control" placeholder="Description">
+        </div>
+        
+      </div>
+
+      <!-- Add button -->
+      <button mdbBtn color="info" block="true" class="my-4 btn-md" type="submit">Add</button>
+    </form>
+    <!-- Default form --> 
+    </div>
+
+</section>
+<hr>
+<section class="item-section">
+  <div class="item-container">
+
+    <div class="income-column">
+        <div class="row">
+            <div class="col" style="width:100px;">
+
+              <mdb-card >
+                  <!--Card content-->
+                  <mdb-card-body>
+                
+                    <!--Title-->
+                    <mdb-card-title>
+                      <h4>Income</h4>
+                    </mdb-card-title>
+                
+                    <!--Text-->
+                    <mdb-card-text [ngClass]="{'income': isIncome}"> Some quick example text to build on the card title and make up the bulk of the card's
+                      content.
+                    </mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+
+
+            </div>
+            <div class="col" style="width:100px;">
+
+              <mdb-card>
+                  <!--Card content-->
+                  <mdb-card-body>
+                
+                    <!--Title-->
+                    <mdb-card-title>
+                      <h4>Expense</h4>
+                    </mdb-card-title>
+                
+                    <!--Text-->
+                    <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+                      content.
+                    </mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+            </div>
+          </div>
+
     </div>
   </div>
-</div>
-<!-- End your project here-->
+
+
+</section>
+
